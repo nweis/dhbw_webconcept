@@ -1,0 +1,1573 @@
+2014-01-26 16:45:56 Error: [MissingControllerException] Controller class TourController could not be found.
+Exception Attributes: array (
+  'class' => 'TourController',
+  'plugin' => NULL,
+)
+Request URL: /tour
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 16:49:09 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 16:49:41 Error: [NotFoundException] Invalid group
+Request URL: /groups/delete/0
+Stack Trace:
+#0 [internal function]: GroupsController->delete('0')
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#2 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-26 16:49:52 Error: [NotFoundException] Invalid group
+Request URL: /groups/delete/0
+Stack Trace:
+#0 [internal function]: GroupsController->delete('0')
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#2 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-26 16:51:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `c7...', Array)
+#2 C:\xampp\htdocs\www\myTour\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `c7...')
+#3 C:\xampp\htdocs\www\myTour\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Group), Array, Array)
+#4 C:\xampp\htdocs\www\myTour\app\Controller\GroupsController.php(51): Model->save(Array)
+#5 [internal function]: GroupsController->add()
+#6 C:\xampp\htdocs\www\myTour\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#7 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-26 17:05:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-2.0.3.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:05:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:05:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery-2.0.3.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:05:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:07:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:07:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:07:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:08:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:08:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:21:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:21:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:21:29 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:21:32 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:21:45 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:22:28 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:22:30 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:22:35 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:33:30 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:39:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 17:39:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 18:00:33 Error: [MissingActionException] Action ToursController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'ToursController',
+  'action' => '1',
+)
+Request URL: /tours/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ToursController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 18:01:16 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:07:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:07:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:08:15 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:08:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:08:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:08:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:08:35 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:17:12 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:17:27 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:17:31 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:18:55 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:18:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:18:58 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:19:14 Error: [MissingControllerException] Controller class AdministrationController could not be found.
+Exception Attributes: array (
+  'class' => 'AdministrationController',
+  'plugin' => NULL,
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:19:43 Error: [MissingActionException] Action PagesController::administration() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'administration',
+)
+Request URL: /administration
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\myTour\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 20:22:06 Error: [MissingControllerException] Controller class ParametersController could not be found.
+Exception Attributes: array (
+  'class' => 'ParametersController',
+  'plugin' => NULL,
+)
+Request URL: /parameters
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:32:43 Error: [MissingControllerException] Controller class TermsController could not be found.
+Exception Attributes: array (
+  'class' => 'TermsController',
+  'plugin' => NULL,
+)
+Request URL: /terms
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:39:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:39:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:40:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:40:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:40:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:40:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:41:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:41:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:41:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:43:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:44:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 20:47:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:04:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:04:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:04:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:04:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:04:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:08:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:43:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:44:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:44:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:44:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgDIVIDER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:48:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 21:50:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bgHOVER.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\www\myTour\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-02 14:52:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-02 15:12:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/bg_body.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-02 15:41:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/jquery.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-03 16:41:08 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-03 16:41:13 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-03 16:41:14 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/users/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-03 16:41:46 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/users/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-16 20:21:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.prename' in 'field list'
+Request URL: /users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(112): Model->find('first', Array)
+#7 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(81): BaseAuthenticate->_findUser('admin', 'admin')
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Component\AuthComponent.php(752): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Component\AuthComponent.php(599): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(32): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#14 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-04-16 20:21:48 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-16 21:21:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:35:35 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 61]
+2014-04-22 10:35:35 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 10:49:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:50:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:51:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:52:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:54:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.name' in 'field list'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2902): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(140): Model->find('list', Array)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 10:56:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'userNameExists' at line 1
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('userNameExists', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('userNameExists', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('userNameExists', Array, Array)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(800): DboSource->query('userNameExists', Array, Object(User))
+#5 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(115): Model->__call('userNameExists', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(115): User->userNameExists('user')
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 11:02:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'userNameExists' at line 1
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('userNameExists', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('userNameExists', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('userNameExists', Array, Array)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(800): DboSource->query('userNameExists', Array, Object(User))
+#5 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(115): Model->__call('userNameExists', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(115): User->userNameExists('user')
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 11:07:04 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 127]
+2014-04-22 11:07:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 11:13:52 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 137]
+2014-04-22 11:13:52 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 137, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 137, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 11:15:01 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 136]
+2014-04-22 11:15:01 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 136, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 136, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 11:15:25 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 136]
+2014-04-22 11:15:25 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 136, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 136, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 11:15:43 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 137]
+2014-04-22 11:15:43 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 137, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 137, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 11:21:10 Error: [NotFoundException] Invalid user
+Request URL: /users/delete/28
+Stack Trace:
+#0 [internal function]: UsersController->delete('28')
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-22 11:21:31 Error: [NotFoundException] Unbekannter Benutzer
+Request URL: /users/delete/28
+Stack Trace:
+#0 [internal function]: UsersController->delete('28')
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-22 11:39:17 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Users\edit.ctp, line 10]
+2014-04-22 11:39:17 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 12:01:36 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 130]
+2014-04-22 12:01:36 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users/index
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 130)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 130, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 130, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 12:01:55 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php, line 151]
+2014-04-22 12:01:55 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /users/index
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 151)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 151, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 151, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 12:02:07 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [C:\xampp\htdocs\www\cake_boilerplate\app\Model\User.php, line 146]
+2014-04-22 12:02:07 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /users/index
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 146, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 146, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 12:03:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validateUserData' at line 1
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('validateUserDat...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('validateUserDat...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('validateUserDat...', Array, Array)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(800): DboSource->query('validateUserDat...', Array, Object(User))
+#5 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(110): Model->__call('validateUserDat...', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(110): User->validateUserData(Array, false)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 12:04:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'validateUserData' at line 1
+Request URL: /users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('validateUserDat...', Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('validateUserDat...', Array, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('validateUserDat...', Array, Array)
+#4 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Model\Model.php(800): DboSource->query('validateUserDat...', Array, Object(User))
+#5 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(110): Model->__call('validateUserDat...', Array)
+#6 C:\xampp\htdocs\www\cake_boilerplate\app\Controller\UsersController.php(110): User->validateUserData(Array, false)
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-04-22 13:30:09 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 62]
+2014-04-22 13:30:09 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:30:17 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 62]
+2014-04-22 13:30:17 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 62, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 62, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:36:14 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 71]
+2014-04-22 13:36:14 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:36:25 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 71]
+2014-04-22 13:36:25 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:36:27 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Layouts\default.ctp, line 71]
+2014-04-22 13:36:27 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:51:34 Error: Fatal Error (4): syntax error, unexpected T_CLASS, expecting ')' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Users\index.ctp, line 6]
+2014-04-22 13:51:34 Error: [FatalErrorException] syntax error, unexpected T_CLASS, expecting ')'
+Request URL: /users
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:51:52 Error: Fatal Error (4): syntax error, unexpected T_CLASS, expecting ')' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Users\index.ctp, line 6]
+2014-04-22 13:51:52 Error: [FatalErrorException] syntax error, unexpected T_CLASS, expecting ')'
+Request URL: /users
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 6, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-22 13:57:42 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\xampp\htdocs\www\cake_boilerplate\app\View\Users\index.ctp, line 27]
+2014-04-22 13:57:42 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /users
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 27, Array)
+#2 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 27, Array)
+#3 C:\xampp\htdocs\www\cake_boilerplate\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-03 13:11:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/eng.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:11:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:11:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/deu.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:11:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/fra.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:12:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:12:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:12:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/.png
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:13:59 Error: [MissingControllerException] Controller class SetLanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'SetLanguageController',
+  'plugin' => NULL,
+)
+Request URL: /setLanguage/eng
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:14:36 Error: [MissingControllerException] Controller class SetLanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'SetLanguageController',
+  'plugin' => NULL,
+)
+Request URL: /setLanguage/eng
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:14:39 Error: [MissingControllerException] Controller class SetLanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'SetLanguageController',
+  'plugin' => NULL,
+)
+Request URL: /setLanguage/deu
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:14:41 Error: [MissingControllerException] Controller class SetLanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'SetLanguageController',
+  'plugin' => NULL,
+)
+Request URL: /setLanguage/eng
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:46 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:50 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:52 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:53 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:53 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:54 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:54 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:26:55 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:39:16 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:40:04 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:40:05 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:40:07 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:40:07 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 13:40:08 Error: [MissingControllerException] Controller class KjsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'KjsdfController',
+  'plugin' => NULL,
+)
+Request URL: /kjsdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\cake_boilerplate\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 15:31:17 Error: [MissingControllerException] Controller class ConceptmaosController could not be found.
+Exception Attributes: array (
+  'class' => 'ConceptmaosController',
+  'plugin' => NULL,
+)
+Request URL: /conceptmaos
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-03 16:17:11 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\index.ctp, line 5]
+2014-08-03 16:17:11 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /concept_maps
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-03 16:20:41 Error: Fatal Error (4): syntax error, unexpected '$conceptMap' (T_VARIABLE) in [C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\index.ctp, line 22]
+2014-08-03 16:20:41 Error: [FatalErrorException] syntax error, unexpected '$conceptMap' (T_VARIABLE)
+Request URL: /concept_maps/index/sort:name/direction:desc
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 22, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 22, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-03 16:21:46 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\index.ctp, line 26]
+2014-08-03 16:21:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /concept_maps
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-03 16:22:18 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\index.ctp, line 26]
+2014-08-03 16:22:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /concept_maps
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

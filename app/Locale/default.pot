@@ -1,0 +1,502 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-08-03 15:46+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AppController.php:97
+msgid "Nicht autorisierter Zugriff. Durch Ihre Anfrage wurde eine Sicherheitsfunktion ausgelöst."
+msgstr ""
+
+#: Controller/ConceptMapsController.php:37;69;94
+msgid "Invalid concept map"
+msgstr ""
+
+#: Controller/ConceptMapsController.php:52;73
+msgid "The concept map has been saved."
+msgstr ""
+
+#: Controller/ConceptMapsController.php:55;76
+msgid "The concept map could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ConceptMapsController.php:98
+msgid "The concept map has been deleted."
+msgstr ""
+
+#: Controller/ConceptMapsController.php:100
+msgid "The concept map could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/KeywordsController.php:37;71;98
+msgid "Invalid keyword"
+msgstr ""
+
+#: Controller/KeywordsController.php:52;75
+msgid "The keyword has been saved."
+msgstr ""
+
+#: Controller/KeywordsController.php:55;78
+msgid "The keyword could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/KeywordsController.php:102
+msgid "The keyword has been deleted."
+msgstr ""
+
+#: Controller/KeywordsController.php:104
+msgid "The keyword could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:35
+msgid "Sie sind nun eingeloggt."
+msgstr ""
+
+#: Controller/UsersController.php:44
+msgid "Die Kombination von Benutzername und Passwort konnte nicht gefunden werden."
+msgstr ""
+
+#: Controller/UsersController.php:63
+msgid "Sie sind nun ausgeloggt."
+msgstr ""
+
+#: Controller/UsersController.php:91
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:115
+msgid "Ihr Passwort wurde geändert."
+msgstr ""
+
+#: Controller/UsersController.php:149
+msgid "Der Benutzer wurde erfolgreich angelegt."
+msgstr ""
+
+#: Controller/UsersController.php:156
+msgid "Der Benutzer konnte nicht angelegt werden. Bitte versuchen Sie es erneut."
+msgstr ""
+
+#: Controller/UsersController.php:188;261
+msgid "Unbekannter Benutzer"
+msgstr ""
+
+#: Controller/UsersController.php:219
+msgid "Die Änderungen wurden gespeichert."
+msgstr ""
+
+#: Controller/UsersController.php:226
+msgid "Die Änderungen konnten nicht gespeichert werden. Bitte versuchen Sie es erneut."
+msgstr ""
+
+#: Controller/UsersController.php:265
+msgid "Der Benutzer wurde gelöscht."
+msgstr ""
+
+#: Controller/UsersController.php:271
+msgid "Der Benutzer konnte nicht gelöscht werden. Bitte versuchen Sie es erneut"
+msgstr ""
+
+#: Model/User.php:128
+msgid "Der Benutzername muss aus mindestens vier Zeichen und darf nur aus Zahlen und Buchstaben bestehen."
+msgstr ""
+
+#: Model/User.php:133
+msgid "Der Benutzername existiert bereits."
+msgstr ""
+
+#: Model/User.php:164
+msgid "Ihr Passwort konnte nicht geändert werden. Bitte kontaktieren Sie den Betreiber."
+msgstr ""
+
+#: Model/User.php:197
+msgid "Das angegebene Passwort stimmt nicht mit Ihrem bisherigen Passwort überein."
+msgstr ""
+
+#: Model/User.php:207
+msgid "Die Passwörter stimmen nicht überein."
+msgstr ""
+
+#: Model/User.php:211
+msgid "Das Passwort muss aus mindestens acht Zeichen bestehen, darf nur aus Zahlen und Buchstaben bestehen und mindestens eine Zahl und einen Buchstaben enthalten."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:18
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:27
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:6
+msgid "Alert notice message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:30;41
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:10
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:6
+msgid "Alert success message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:34
+#: Plugin/BoostCake/View/Elements/bootstrap2/alerts.ctp:15
+msgid "Alert error message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:45
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:11
+msgid "Alert info message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:49
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:16
+msgid "Alert warning message testing..."
+msgstr ""
+
+#: Plugin/BoostCake/Controller/BoostCakeController.php:53
+#: Plugin/BoostCake/View/Elements/bootstrap3/alerts.ctp:21
+msgid "Alert danger message testing..."
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:4
+msgid "Add Concept Map"
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:9
+#: View/ConceptMaps/edit.ctp:10
+#: View/Keywords/add.ctp:10
+#: View/Keywords/edit.ctp:11
+msgid "Submit"
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:12
+#: View/ConceptMaps/edit.ctp:13
+#: View/ConceptMaps/index.ctp:10;44
+#: View/ConceptMaps/view.ctp:27;47
+#: View/Keywords/add.ctp:13
+#: View/Keywords/edit.ctp:14
+#: View/Keywords/index.ctp:11;48
+#: View/Keywords/view.ctp:32
+msgid "Actions"
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:15
+#: View/ConceptMaps/edit.ctp:17
+#: View/ConceptMaps/view.ctp:31
+#: View/Keywords/add.ctp:17
+#: View/Keywords/edit.ctp:19
+#: View/Keywords/index.ctp:51
+#: View/Keywords/view.ctp:38
+msgid "List Concept Maps"
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:16
+#: View/ConceptMaps/edit.ctp:18
+#: View/ConceptMaps/index.ctp:47
+#: View/ConceptMaps/view.ctp:33
+#: View/Keywords/add.ctp:16
+#: View/Keywords/edit.ctp:18
+#: View/Keywords/view.ctp:36
+msgid "List Keywords"
+msgstr ""
+
+#: View/ConceptMaps/add.ctp:17
+#: View/ConceptMaps/edit.ctp:19
+#: View/ConceptMaps/index.ctp:48
+#: View/ConceptMaps/view.ctp:34;68
+#: View/Keywords/index.ctp:50
+#: View/Keywords/view.ctp:37
+msgid "New Keyword"
+msgstr ""
+
+#: View/ConceptMaps/edit.ctp:4
+#: View/ConceptMaps/view.ctp:29
+msgid "Edit Concept Map"
+msgstr ""
+
+#: View/ConceptMaps/edit.ctp:16
+#: View/ConceptMaps/index.ctp:23
+#: View/ConceptMaps/view.ctp:59
+#: View/Keywords/edit.ctp:17
+#: View/Keywords/index.ctp:27
+msgid "Delete"
+msgstr ""
+
+#: View/ConceptMaps/edit.ctp:16
+#: View/ConceptMaps/index.ctp:23
+#: View/ConceptMaps/view.ctp:30;59
+#: View/Keywords/edit.ctp:17
+#: View/Keywords/index.ctp:27
+#: View/Keywords/view.ctp:35
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:2
+msgid "Concept Maps"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:21
+#: View/ConceptMaps/view.ctp:57
+#: View/Keywords/index.ctp:25
+msgid "View"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:22
+#: View/ConceptMaps/view.ctp:58
+#: View/Keywords/index.ctp:26
+msgid "Edit"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:32
+#: View/Keywords/index.ctp:36
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:37
+#: View/Keywords/index.ctp:41
+msgid "previous"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:39
+#: View/Keywords/index.ctp:43
+msgid "next"
+msgstr ""
+
+#: View/ConceptMaps/index.ctp:46
+#: View/ConceptMaps/view.ctp:32
+#: View/Keywords/add.ctp:18
+#: View/Keywords/edit.ctp:20
+#: View/Keywords/index.ctp:52
+#: View/Keywords/view.ctp:39
+msgid "New Concept Map"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:2
+#: View/Keywords/view.ctp:9
+msgid "Concept Map"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:4;42
+#: View/Keywords/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:9;44
+#: View/Keywords/view.ctp:14
+msgid "Name"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:14;45
+#: View/Keywords/view.ctp:19
+msgid "Created"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:19;46
+#: View/Keywords/view.ctp:24
+msgid "Modified"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:30
+msgid "Delete Concept Map"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:38
+msgid "Related Keywords"
+msgstr ""
+
+#: View/ConceptMaps/view.ctp:43
+msgid "Concept Map Id"
+msgstr ""
+
+#: View/Elements/navigation.ctp:23
+msgid "Startseite"
+msgstr ""
+
+#: View/Elements/navigation.ctp:27
+msgid "Concept-Maps"
+msgstr ""
+
+#: View/Elements/navigation.ctp:36
+msgid "Administration"
+msgstr ""
+
+#: View/Elements/navigation.ctp:38
+#: View/Users/add.ctp:1
+#: View/Users/edit.ctp:1
+#: View/Users/index.ctp:10
+#: View/Users/view.ctp:1
+msgid "Benutzerverwaltung"
+msgstr ""
+
+#: View/Elements/navigation.ctp:46
+msgid "Eingeloggt als: "
+msgstr ""
+
+#: View/Elements/navigation.ctp:48
+#: View/Users/change_password.ctp:1;35
+msgid "Passwort ändern"
+msgstr ""
+
+#: View/Elements/navigation.ctp:50
+msgid "Ausloggen"
+msgstr ""
+
+#: View/Elements/navigation.ctp:60
+msgid "Deutsch"
+msgstr ""
+
+#: View/Elements/navigation.ctp:63
+msgid "English"
+msgstr ""
+
+#: View/Elements/navigationNotLoggedIn.ctp:27
+#: View/Users/add.ctp:16
+#: View/Users/index.ctp:14
+msgid "Benutzername"
+msgstr ""
+
+#: View/Elements/navigationNotLoggedIn.ctp:34
+#: View/Users/add.ctp:18
+msgid "Passwort"
+msgstr ""
+
+#: View/Keywords/add.ctp:4
+msgid "Add Keyword"
+msgstr ""
+
+#: View/Keywords/edit.ctp:4
+#: View/Keywords/view.ctp:34
+msgid "Edit Keyword"
+msgstr ""
+
+#: View/Keywords/index.ctp:2
+msgid "Keywords"
+msgstr ""
+
+#: View/Keywords/view.ctp:2
+msgid "Keyword"
+msgstr ""
+
+#: View/Keywords/view.ctp:35
+msgid "Delete Keyword"
+msgstr ""
+
+#: View/Layouts/default.ctp:20
+msgid "CakePHP Boilerplate by flux-services.net"
+msgstr ""
+
+#: View/Layouts/default.ctp:90
+msgid "powered by flux-services.net"
+msgstr ""
+
+#: View/Users/add.ctp:2
+#: View/Users/index.ctp:5
+msgid "Benutzer hinzufügen"
+msgstr ""
+
+#: View/Users/add.ctp:17
+msgid "Benutzergruppe"
+msgstr ""
+
+#: View/Users/add.ctp:17
+msgid "- bitte auswählen -"
+msgstr ""
+
+#: View/Users/add.ctp:19
+#: View/Users/change_password.ctp:27
+#: View/Users/edit.ctp:20
+msgid "Passwort wiederholen"
+msgstr ""
+
+#: View/Users/add.ctp:27
+#: View/Users/edit.ctp:35
+msgid "Abbrechen"
+msgstr ""
+
+#: View/Users/change_password.ctp:15
+msgid "Altes Passwort"
+msgstr ""
+
+#: View/Users/change_password.ctp:21
+msgid "Neues Passwort"
+msgstr ""
+
+#: View/Users/edit.ctp:2
+msgid "Benutzer bearbeiten"
+msgstr ""
+
+#: View/Users/edit.ctp:22
+msgid "Benutzer aktiv?"
+msgstr ""
+
+#: View/Users/index.ctp:4;16
+msgid "Aktionen"
+msgstr ""
+
+#: View/Users/index.ctp:15
+msgid "Gruppe"
+msgstr ""
+
+#: View/Users/index.ctp:23
+msgid "Anzeigen"
+msgstr ""
+
+#: View/Users/index.ctp:25
+msgid "Bearbeiten"
+msgstr ""
+
+#: View/Users/index.ctp:27
+msgid "Löschen"
+msgstr ""
+
+#: View/Users/index.ctp:27
+msgid "Sind Sie sicher, dass Sie den Benutzer \"%s\" entfernen wollen?"
+msgstr ""
+
+#: View/Users/index.ctp:36
+msgid "Seite {:page} von {:pages}, zeige {:current} Datensätze von {:count} insgesamt an, beginnend bei {:start}, endend bei {:end}"
+msgstr ""
+
+#: View/Users/view.ctp:2
+msgid "Benutzer anzeigen"
+msgstr ""
+
+#: View/Users/view.ctp:4
+msgid "Benutzer"
+msgstr ""
+
+#: View/Users/view.ctp:6
+msgid "Benutzer-ID: "
+msgstr ""
+
+#: View/Users/view.ctp:11
+msgid "Benutzergruppe: "
+msgstr ""
+
+#: View/Users/view.ctp:16
+msgid "Benutzername: "
+msgstr ""
+
+#: View/Users/view.ctp:21
+msgid "Erstellungsdatum: "
+msgstr ""
+
+#: View/Users/view.ctp:26
+msgid "Änderungsdatum: "
+msgstr ""
+
+#: View/Users/view.ctp:31
+msgid "Letzter Login: "
+msgstr ""
+
+#: View/Users/view.ctp:43
+msgid "Benutzer aktiv: "
+msgstr ""
+

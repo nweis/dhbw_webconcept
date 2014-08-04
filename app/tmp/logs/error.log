@@ -1812,3 +1812,13 @@ Stack Trace:
 #4 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
 #5 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-08-04 13:11:28 Error: [NotFoundException] Die angegebene Concept-Map konnte nicht gefunden werden.
+Request URL: /cm/ksahgd
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\app\Controller\ConceptMapsController.php(145): ConceptMap->findConceptMapByName('ksahgd')
+#1 [internal function]: ConceptMapsController->createConceptMap('ksahgd')
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ConceptMapsController), Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

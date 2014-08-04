@@ -140,6 +140,14 @@ class ConceptMapsController extends AppController {
  * @return CakePHP view          View in dem der Anwender visuell eine ConceptMap erstellen kann
  */
 	public function createConceptMap($conceptMapName) {
+
+		// ConceptMap suchen anhand des eingegebenen Namens
+		$conceptMap = $this->ConceptMap->findConceptMapByName($conceptMapName);
+
+		// Layout für ConceptMap setzen
 		$this->layout = 'conceptMapCreator';
+
+		// Variablen an View übergeben
+		$this->set('conceptMap', $conceptMap);
 	}
 }

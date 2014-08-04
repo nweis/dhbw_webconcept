@@ -75,4 +75,23 @@ class ConceptMap extends AppModel {
 		return $conceptMapNameArray;
 	}
 
+
+	public function findConceptMapByName($conceptMapName) {
+		
+		// Nach Concept-Map anhand des Namens suchen
+		$conceptMap = $this->find('first', array(
+			'conditions' => array(
+				'ConceptMap.name' => $conceptMapName
+				)
+			)
+		);
+
+		if(empty($conceptMap)) {
+			throw new NotFoundException(__('Die angegebene Concept-Map konnte nicht gefunden werden.'));
+			
+		}else{
+			return $conceptMap;
+		}
+	}
+
 }

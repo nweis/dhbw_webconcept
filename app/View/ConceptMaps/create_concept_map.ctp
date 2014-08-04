@@ -1,30 +1,25 @@
+
+<?php
+    // Helper JS laden
+    echo $this->Html->script('jquery.jsPlumb-1.6.2-min', array('inline' => true));
+    echo $this->Html->script('create-concept-map', array('inline' => true));
+?>    
+
 <div id="wrapper">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            
-            <li class="sidebar-brand"><?php echo $conceptMap['ConceptMap']['name'] ?></li>
-
+            <li id="sidebar-header" class="sidebar-brand"><?php echo $conceptMap['ConceptMap']['name'] ?></li>
             <?php foreach ($conceptMap['Keyword'] as $keyword): ?>
-                <li class="keyword"><?php echo $keyword['name'] ?></li>    
+                <li class="keyword" draggable="true" id="<?php echo $keyword['id'] ?>"><?php echo $keyword['name'] ?></li>    
             <?php endforeach ?>
         </ul>
+        
+        <!-- Diesen Button sollte man noch schöner positionieren -->
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
     </div>
-    <div id="page-content-wrapper">
-       <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>JsPlumb-View</h1>
-                    <?php debug($conceptMap);?>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
+    <!-- In diesem Container können die einzelnen Keywords per D&D positioniert werden. -->
+    <div id="container">
+    </div>
+
+</div>

@@ -29,15 +29,17 @@ $cakeDescription = __('CakePHP Boilerplate by flux-services.net');
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('bootstrap-theme.min');
 		echo $this->Html->css('concept-map-custom');
+		echo $this->Html->css('jsplumb.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-		echo $this->Html->script('jquery-1.11.0.min'); // Include jQuery library
 		echo $this->Html->script('bootstrap.min'); // Include bootstrap library
 	?>
 </head>

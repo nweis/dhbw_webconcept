@@ -14,7 +14,7 @@ $username = $user['username'];
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">DHBW-Lörrach Concept-Map-Tool</a>
+      <a class="navbar-brand" href="/">DHBW Concept-Map-Tool</a>
     </div>
     <div class="navbar-collapse collapse">
     	

@@ -1,9 +1,12 @@
+<?php $this->Html->addCrumb(__('Concept-Maps'), '/concept_maps'); ?>
+<?php $this->Html->addCrumb($conceptMapName, ''); ?>
+
 <div class="keywords index">
 
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
-				<h1><?php echo __('Keywords'); ?></h1>
+				<h1><?php echo __('Begriffe von').' '.$conceptMapName; ?></h1>
 			</div>
 		</div><!-- end col md 12 -->
 	</div><!-- end row -->
@@ -20,7 +23,7 @@
 							<ul class="nav nav-pills nav-stacked">
 								<li>
 									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Keyword erstellen'),
+										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Begriff erstellen'),
 										array('action' => 'add'), array('escape' => false)); ?>
 								</li>
 									<li>
@@ -28,13 +31,7 @@
 										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept Maps anzeigen'),
 										array('controller' => 'concept_maps',
 										'action' => 'index'), array('escape' => false)); ?>
-								</li>
-								<li>
-									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Concept Map erstellen'),
-										array('controller' => 'concept_maps',
-										'action' => 'add'), array('escape' => false)); ?>
-								</li>
+								</li>								
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->
@@ -45,26 +42,19 @@
 			<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
-						<th><?php echo $this->Paginator->sort('id'); ?></th>
-						<th><?php echo $this->Paginator->sort('concept_map_id'); ?></th>
-						<th><?php echo $this->Paginator->sort('name'); ?></th>
-						<th><?php echo $this->Paginator->sort('created'); ?></th>
-						<th><?php echo $this->Paginator->sort('modified'); ?></th>
+						<th><?php echo $this->Paginator->sort('name', __('Name')); ?></th>
+						<th><?php echo $this->Paginator->sort('created', __('Erstellt')); ?></th>
+						<th><?php echo $this->Paginator->sort('modified', __('Verändert')); ?></th>
 						<th class="actions"></th>
 					</tr>
 				</thead>
 				<tbody>
 				<?php foreach ($keywords as $keyword): ?>
 					<tr>
-						<td><?php echo h($keyword['Keyword']['id']); ?>&nbsp;</td>
-								<td>
-			<?php echo $this->Html->link($keyword['ConceptMap']['name'], array('controller' => 'concept_maps', 'action' => 'view', $keyword['ConceptMap']['id'])); ?>
-		</td>
 						<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
-						<td><?php echo h($keyword['Keyword']['created']); ?>&nbsp;</td>
-						<td><?php echo h($keyword['Keyword']['modified']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['created']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['modified']); ?>&nbsp;</td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('action' => 'view', $keyword['Keyword']['id']), array('escape' => false)); ?>
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $keyword['Keyword']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $keyword['Keyword']['id']), array('escape' => false), __('Sind Sie sicher, dass # %s löschen wollen?', $keyword['Keyword']['id'])); ?>
 						</td>

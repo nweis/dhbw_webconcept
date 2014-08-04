@@ -141,7 +141,9 @@ class AppController extends Controller {
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
 				'view' => array(1, 2),
-			)
+			),
+
+
 	);
 		// Wenn der Controller-Name ($this->name) in allowedActions vorkommt, dann...
 		if(isset($allowedActions[strtolower($this->name)])) {

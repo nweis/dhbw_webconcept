@@ -20,24 +20,29 @@ class KeywordsController extends AppController {
  *
  * @return void
  */
-	public function index() {
-		$this->Keyword->recursive = 0;
-		$this->set('keywords', $this->Paginator->paginate());
-	}
+	public function index($conceptMapId) {
 
-/**
- * view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function view($id = null) {
-		if (!$this->Keyword->exists($id)) {
-			throw new NotFoundException(__('keyword konnte nicht gefunden werden.'));
+		// Prüfung, ob gesuchte Concept-Map existiert
+		if(!$this->Keyword->ConceptMap->exists($conceptMapId)) {
+			throw new NotFoundException(__('Die angegebene Concept-Map existiert nicht.'));
+			
 		}
-		$options = array('conditions' => array('Keyword.' . $this->Keyword->primaryKey => $id));
-		$this->set('keyword', $this->Keyword->find('first', $options));
+
+		// Concept-Map Namen ziehen
+		$conceptMapName = $this->Keyword->ConceptMap->getNameOfConceptMap($conceptMapId);
+
+		// Find eingrenzen, um lediglich die Keywords zu finden, die zu einer Concept-Map gehören
+		$this->Paginator->settings = array(
+			'conditions' => array(
+				'Keyword.concept_map_id' => $conceptMapId
+				),
+			'recursive' => 0
+			);
+
+		// Keywords ziehen
+		$keywords = $this->Paginator->paginate();
+
+		$this->set(compact('keywords', 'conceptMapName'));
 	}
 
 /**

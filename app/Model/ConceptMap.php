@@ -48,4 +48,29 @@ class ConceptMap extends AppModel {
 		)
 	);
 
+	/**
+	 * Methode wird verwendet, um den Namen einer bestimmten Concept-Map zu erhalten
+	 * @param  int $id 	  id einer Concept-Map
+	 * @return String     Name einer Concept-Map
+	 */
+	public function getNameOfConceptMap($id) {
+
+		// Prüfung, ob Concept-Map existiert
+		if(!$this->exists($id)) {
+			throw new NotFoundException(__('Die Concept-Map konnte nicht gefunden werden.'));
+		}
+
+		$conceptMapNameArray = $this->find('first', array(
+			'conditions' => array(
+					'ConceptMap.id' => $id
+				),
+				'fields' => array(
+					'ConceptMap.name'
+				)
+			)
+		);
+
+		return $conceptMapNameArray['ConceptMap']['name'];
+	}
+
 }

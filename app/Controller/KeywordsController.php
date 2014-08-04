@@ -58,14 +58,14 @@ class KeywordsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Keyword->create();
 			if ($this->Keyword->save($this->request->data)) {
-				$this->Session->setFlash(__('keyword wurde gespeichert.'), 'alert', array(
+				$this->Session->setFlash(__('Der Begriff wurde gespeichert.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 					)
 				);
 				return $this->redirect(array('action' => 'index', $conceptMap['ConceptMap']['id']));
 			} else {
-				$this->Session->setFlash(__('keyword konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+				$this->Session->setFlash(__('Der Begriff konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)
@@ -85,7 +85,7 @@ class KeywordsController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Keyword->exists($id)) {
-			throw new NotFoundException(__('keyword konnte nicht gefunden werden'));
+			throw new NotFoundException(__('Begriff konnte nicht gefunden werden'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Keyword->save($this->request->data)) {
@@ -96,7 +96,7 @@ class KeywordsController extends AppController {
 				);
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('keyword konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+				$this->Session->setFlash(__('Der Begriff konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)
@@ -119,23 +119,30 @@ class KeywordsController extends AppController {
  */
 	public function delete($id = null) {
 		$this->Keyword->id = $id;
+
+		// ConceptMapId einlesen, um anschließend in den korrekten View zurück routen zu können
+		$this->Keyword->read('concept_map_id');
+		$conceptMapId = $this->Keyword->data['Keyword']['concept_map_id'];
+
 		if (!$this->Keyword->exists()) {
-			throw new NotFoundException(__('keyword konnte nicht gefunden werden.'));
+			throw new NotFoundException(__('Der Begriff konnte nicht gefunden werden.'));
 		}
+
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Keyword->delete()) {
-			$this->Session->setFlash(__('The keyword wurde gelöscht.'), 'alert', array(
+			$this->Session->setFlash(__('Der Begriff wurde gelöscht.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 					)
 				);
 		} else {
-			$this->Session->setFlash(__('keyword konnte nicht gelöscht werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+			$this->Session->setFlash(__('Der Begriff konnte nicht gelöscht werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)
 				);
 		}
-		return $this->redirect(array('action' => 'index'));
+
+		return $this->redirect(array('action' => 'index', $conceptMapId));
 	}
 }

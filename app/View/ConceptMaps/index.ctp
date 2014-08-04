@@ -53,7 +53,6 @@
 						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['created']); ?>&nbsp;</td>
 						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['modified']); ?>&nbsp;</td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('action' => 'view', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $conceptMap['ConceptMap']['id']), array('escape' => false), __('Sind Sie sicher, dass # %s löschen wollen?', $conceptMap['ConceptMap']['id'])); ?>
 						</td>

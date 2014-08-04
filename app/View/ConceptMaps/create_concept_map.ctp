@@ -1,7 +1,9 @@
 <div id="wrapper">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <li class="sidebar-brand"><?php echo __('Concept-Map').': '.$conceptMap['ConceptMap']['name'] ?></li>
+            
+            <li class="sidebar-brand"><?php echo $conceptMap['ConceptMap']['name'] ?></li>
+
             <?php foreach ($conceptMap['Keyword'] as $keyword): ?>
                 <li class="keyword"><?php echo $keyword['name'] ?></li>    
             <?php endforeach ?>

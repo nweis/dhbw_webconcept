@@ -16,6 +16,14 @@ class ConceptMapsController extends AppController {
 	public $components = array('Paginator');
 
 /**
+ * BeforeFilter wird ausgeführt, bevor andere Controller-Actions durchgeführt werden
+ */
+	function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(array('createConceptMap'));
+	}
+
+/**
  * index method
  *
  * @return void
@@ -124,5 +132,14 @@ class ConceptMapsController extends AppController {
 				);
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+/**
+ * Methode wird verwendet, um den Anwender auf den View zu leiten, der es ermöglicht eine ConceptMap grafisch zu erstellen
+ * @param  String $conceptMapName Name einer existierenden Concept-Map
+ * @return CakePHP view          View in dem der Anwender visuell eine ConceptMap erstellen kann
+ */
+	public function createConceptMap($conceptMapName) {
+		$this->layout = 'conceptMapCreator';
 	}
 }

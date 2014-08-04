@@ -29,20 +29,20 @@ class KeywordsController extends AppController {
 		}
 
 		// Concept-Map Namen ziehen
-		$conceptMapName = $this->Keyword->ConceptMap->getNameOfConceptMap($conceptMapId);
+		$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($conceptMapId);
 
 		// Find eingrenzen, um lediglich die Keywords zu finden, die zu einer Concept-Map gehören
 		$this->Paginator->settings = array(
 			'conditions' => array(
 				'Keyword.concept_map_id' => $conceptMapId
 				),
-			'recursive' => 0
+			'recursive' => -1
 			);
 
 		// Keywords ziehen
 		$keywords = $this->Paginator->paginate();
 
-		$this->set(compact('keywords', 'conceptMapName'));
+		$this->set(compact('keywords', 'conceptMap'));
 	}
 
 /**
@@ -50,7 +50,11 @@ class KeywordsController extends AppController {
  *
  * @return void
  */
-	public function add() {
+	public function add($conceptMapId) {
+		
+		// Zugehöriges ConceptMap-Objekt ziehen (Name und Id)
+		$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($conceptMapId);
+
 		if ($this->request->is('post')) {
 			$this->Keyword->create();
 			if ($this->Keyword->save($this->request->data)) {
@@ -59,7 +63,7 @@ class KeywordsController extends AppController {
 					'class' => 'alert-success'
 					)
 				);
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'index', $conceptMap['ConceptMap']['id']));
 			} else {
 				$this->Session->setFlash(__('keyword konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
@@ -68,8 +72,8 @@ class KeywordsController extends AppController {
 				);
 			}
 		}
-		$conceptMaps = $this->Keyword->ConceptMap->find('list');
-		$this->set(compact('conceptMaps'));
+		
+		$this->set(compact('conceptMap'));
 	}
 
 /**

@@ -1669,3 +1669,146 @@ Stack Trace:
 #3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
 #4 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-04 11:54:05 Error: [NotFoundException] Die Concept-Map konnte nicht gefunden werden.
+Request URL: /keywords/index/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\app\Controller\KeywordsController.php(32): ConceptMap->getNameAndIdOfConceptMap(NULL)
+#1 [internal function]: KeywordsController->index('1')
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KeywordsController), Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-04 11:54:10 Error: [NotFoundException] Die Concept-Map konnte nicht gefunden werden.
+Request URL: /keywords/index/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\app\Controller\KeywordsController.php(32): ConceptMap->getNameAndIdOfConceptMap(NULL)
+#1 [internal function]: KeywordsController->index('1')
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(KeywordsController), Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-04 12:01:00 Error: [MissingActionException] Action KeywordsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'KeywordsController',
+  'action' => '1',
+)
+Request URL: /keywords/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:01:24 Error: [MissingActionException] Action KeywordsController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'KeywordsController',
+  'action' => '1',
+)
+Request URL: /keywords/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(KeywordsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:31:45 Error: Fatal Error (1): Call to undefined method Router::conncet() in [C:\xampp\htdocs\www\dh_webconcept\app\Config\routes.php, line 31]
+2014-08-04 12:31:45 Error: [FatalErrorException] Call to undefined method Router::conncet()
+Request URL: /cm/test
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 31, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 31, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-04 12:31:55 Error: [MissingActionException] Action ConceptMapsController::cm() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConceptMapsController',
+  'action' => 'cm',
+)
+Request URL: /cm/test
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:32:51 Error: [MissingActionException] Action ConceptMapsController::conceptMapCreator() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConceptMapsController',
+  'action' => 'conceptMapCreator',
+)
+Request URL: /cm/test
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:33:19 Error: [MissingActionException] Action ConceptMapsController::conceptMapCreation() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConceptMapsController',
+  'action' => 'conceptMapCreation',
+)
+Request URL: /cm/test
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:33:42 Error: [MissingActionException] Action ConceptMapsController::createConceptMap() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConceptMapsController',
+  'action' => 'createConceptMap',
+)
+Request URL: /cm/test
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-04 12:37:05 Error: [MissingViewException] View file "C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\create_concept_map.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\dh_webconcept\\app\\View\\ConceptMaps\\create_concept_map.ctp',
+)
+Request URL: /cm/ksahgdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-04 12:37:35 Error: [MissingViewException] View file "C:\xampp\htdocs\www\dh_webconcept\app\View\ConceptMaps\create_concept_map.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\dh_webconcept\\app\\View\\ConceptMaps\\create_concept_map.ctp',
+)
+Request URL: /cm/ksahgdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-04 12:38:23 Error: Fatal Error (1): Call to undefined method ConceptMapsController::layout() in [C:\xampp\htdocs\www\dh_webconcept\app\Controller\ConceptMapsController.php, line 143]
+2014-08-04 12:38:23 Error: [FatalErrorException] Call to undefined method ConceptMapsController::layout()
+Request URL: /cm/ksahgdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 143)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 143, Array)
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 143, Array)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-04 12:40:04 Error: [MissingLayoutException] Layout file "C:\xampp\htdocs\www\dh_webconcept\app\View\Layouts\conceptMapCreator.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\dh_webconcept\\app\\View\\Layouts\\conceptMapCreator.ctp',
+)
+Request URL: /cm/ksahgdf
+Stack Trace:
+#0 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\View\View.php(510): View->_getLayoutFileName('conceptMapCreat...')
+#1 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\View\View.php(479): View->renderLayout('', 'conceptMapCreat...')
+#2 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 C:\xampp\htdocs\www\dh_webconcept\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConceptMapsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\www\dh_webconcept\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

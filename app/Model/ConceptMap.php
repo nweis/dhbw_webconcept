@@ -51,9 +51,9 @@ class ConceptMap extends AppModel {
 	/**
 	 * Methode wird verwendet, um den Namen einer bestimmten Concept-Map zu erhalten
 	 * @param  int $id 	  id einer Concept-Map
-	 * @return String     Name einer Concept-Map
+	 * @return Array      Name und id einer Concept-Map
 	 */
-	public function getNameOfConceptMap($id) {
+	public function getNameAndIdOfConceptMap($id) {
 
 		// Prüfung, ob Concept-Map existiert
 		if(!$this->exists($id)) {
@@ -64,13 +64,15 @@ class ConceptMap extends AppModel {
 			'conditions' => array(
 					'ConceptMap.id' => $id
 				),
-				'fields' => array(
+			'fields' => array(
+					'ConceptMap.id',
 					'ConceptMap.name'
-				)
+				),
+			'recursive' => -1
 			)
 		);
 
-		return $conceptMapNameArray['ConceptMap']['name'];
+		return $conceptMapNameArray;
 	}
 
 }

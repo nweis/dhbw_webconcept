@@ -56,8 +56,10 @@ class KeywordsController extends AppController {
 		$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($conceptMapId);
 
 		if ($this->request->is('post')) {
-			$this->Keyword->create();
-			if ($this->Keyword->save($this->request->data)) {
+			
+			$data = $this->request->data['Keyword'];
+
+			if ($this->Keyword->saveAll($data)) {
 				$this->Session->setFlash(__('Der Begriff wurde gespeichert.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
@@ -65,6 +67,7 @@ class KeywordsController extends AppController {
 				);
 				return $this->redirect(array('action' => 'index', $conceptMap['ConceptMap']['id']));
 			} else {
+				
 				$this->Session->setFlash(__('Der Begriff konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
@@ -84,12 +87,13 @@ class KeywordsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		
 		if (!$this->Keyword->exists($id)) {
-			throw new NotFoundException(__('Begriff konnte nicht gefunden werden'));
+			throw new NotFoundException(__('Der Begriff konnte nicht gefunden werden'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Keyword->save($this->request->data)) {
-				$this->Session->setFlash(__('keyword wurde gespeichert.'), 'alert', array(
+				$this->Session->setFlash(__('Der Begriff wurde gespeichert.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 					)
@@ -104,10 +108,15 @@ class KeywordsController extends AppController {
 			}
 		} else {
 			$options = array('conditions' => array('Keyword.' . $this->Keyword->primaryKey => $id));
-			$this->request->data = $this->Keyword->find('first', $options);
+			$keyword = $this->Keyword->find('first', $options);
+
+			// Zugehöriges ConceptMap-Objekt ziehen (Name und Id)
+			$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($keyword['Keyword']['concept_map_id']);
+
+			$this->request->data = $keyword;
+			$this->set(compact('conceptMap'));
 		}
-		$conceptMaps = $this->Keyword->ConceptMap->find('list');
-		$this->set(compact('conceptMaps'));
+		
 	}
 
 /**

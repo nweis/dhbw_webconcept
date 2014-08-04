@@ -13,16 +13,26 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-10">
+		<div class="col-md-6">
 			<?php echo $this->Form->create('Keyword', array('role' => 'form')); ?>
-				<div class="form-group">
-					<?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name'));?>
+
+				<?php $this->Form->unlockField('Keyword.name');?>
+				<?php $this->Form->unlockField('Keyword.concept_map_id');?>
+
+				<div class="form-group" id="inputFields">
+					<?php echo $this->Form->input('Keyword.0.name', array('class' => 'form-control', 'placeholder' => 'Name'));?>
 				</div>
+				<div id="moreInputs" value="0"></div>
 				<div class="form-group">
 					<?php echo $this->Form->submit(__('Speichern'), array('class' => 'btn btn-primary')); ?>
 				</div>
+				<div class="form-group">
+					<!-- Neue Felder hinzufügen -> Funktion in bootstrap.min.js vorübergehend-->
+					<input class="btn btn-info" onclick="newInputField()" value="weiterer Begriff">
+						
+				</div>
 			
-			<?php echo $this->Form->hidden('concept_map_id', array('value' => $conceptMap['ConceptMap']['id']));?>
+			<?php echo $this->Form->hidden('Keyword.0.concept_map_id', array('value' => $conceptMap['ConceptMap']['id']));?>
 			<?php echo $this->Form->end() ?>
 
 		</div><!-- end col md 12 -->

@@ -26,7 +26,7 @@
 					</div>
 				</div>			
 		</div><!-- end col md 3 -->
-		<div class="col-md-9">
+		<div class="col-md-6">
 			<?php echo $this->Form->create('ConceptMap', array('role' => 'form')); ?>
 
 				<div class="form-group">

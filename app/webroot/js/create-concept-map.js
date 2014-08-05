@@ -37,6 +37,9 @@ jsPlumb.ready(function() {
 	
 	// Methode ermöglicht neue Elemente durch Drag&Drop hinzuzufügen
 	function dropKeyword(event) {
+		// Weiterleitung als default-Action verhindern
+		event.preventDefault();
+
 		// Eigenschaften aus dem transfer-Element ziehen
 		var keywordTitle = event.dataTransfer.getData("text");
 		var keywordId = event.dataTransfer.getData("id");

@@ -26,12 +26,18 @@
 										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Begriff erstellen'),
 										array('action' => 'add', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
 								</li>
+								<li>
+									<?php echo $this->Html->link(
+										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept Map anzeigen'),
+										array('controller' => 'concept_maps',
+										'action' => '../../../cm/'.$conceptMap['ConceptMap']['name']), array('escape' => false)); ?>
+								</li>			
 									<li>
 									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept Maps anzeigen'),
+										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; zurück zur Übersicht'),
 										array('controller' => 'concept_maps',
 										'action' => 'index'), array('escape' => false)); ?>
-								</li>								
+								</li>
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->

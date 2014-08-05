@@ -103,7 +103,7 @@ jsPlumb.ready(function() {
 
 	// Function bei dragstart
 	function doDragStart(event) {
-		event.dataTransfer.setData("text", event.target.innerHTML);
+		event.dataTransfer.setData("Text", event.target.innerHTML);
 		event.dataTransfer.setData("id", event.target.id);
 	}
 

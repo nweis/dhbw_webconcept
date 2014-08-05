@@ -32,6 +32,7 @@
 				<div class="form-group">
 					<?php echo $this->Form->submit(__('Speichern'), array('class' => 'btn btn-primary', 'div' => false)); ?>
 					<input class="btn btn-info" onclick="newInputField()" value="<?php echo __('Weiterer Begriff');?>">
+					<input class="btn btn-info" onclick="delInputField()" id="dif" style="display:none" value="<?php echo __('Lösche letzten Begriff');?>">
 				</div>
 			
 			<?php echo $this->Form->hidden('Keyword.0.concept_map_id', array('value' => $conceptMap['ConceptMap']['id']));?>

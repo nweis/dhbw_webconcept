@@ -140,4 +140,25 @@ class ConceptMap extends AppModel {
 
 	}
 
+
+	public function checkIfNameExistsForGivenId($conceptMapName, $id) {
+		// Nach Concept-Map anhand des Namens suchen
+		$conceptMap = $this->find('first', array(
+			'conditions' => array(
+				'ConceptMap.name' => $conceptMapName
+				),
+			'fields' => array(
+				'ConceptMap.id'
+				)
+			)
+		);
+
+		if(empty($conceptMap) || $conceptMap['ConceptMap']['id'] == $id) {
+			return false;			
+		}else{
+			return true;
+		}
+
+	}
+
 }

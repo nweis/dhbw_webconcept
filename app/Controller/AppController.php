@@ -130,7 +130,6 @@ class AppController extends Controller {
 				'add' => array(1, 2),
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
-				'view' => array(1, 2),
 			),
 
 			// Berechtigungen für Keywords
@@ -140,7 +139,15 @@ class AppController extends Controller {
 				'add' => array(1, 2),
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
-				'view' => array(1, 2),
+			),
+
+			// Berechtigungen für Studiengruppen
+			'studygroups' => array(
+				'add' => array(1, 2),
+				'index' => array(1, 2),
+				'add' => array(1, 2),
+				'edit' => array(1, 2),
+				'delete' => array(1, 2),
 			),
 
 

@@ -22,7 +22,7 @@ function delInputField(){
 	$('#Keyword'+i+'ConceptMapId').remove();
 	i = parseFloat(i)-1;
 	$('#moreInputs').attr('value',i);
-	if(i == 0){
-		$('#dif').hide();	
+	if(i === 0) {
+		$('#dif').hide();
 	}
 }

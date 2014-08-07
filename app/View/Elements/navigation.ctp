@@ -27,6 +27,10 @@ $username = $user['username'];
               <a href="/concept_maps"><?php echo __('Concept-Maps'); ?></a>
             </li>
 
+            <li <?php if($this->params['controller'] == 'study_groups') {echo 'class="active"';} ?>>
+              <a href="/study_groups"><?php echo __('Studiengruppen'); ?></a>
+            </li>
+
             <?php if($this->Session->read('Auth.User.group_id') == 1) { ?>
             <li class="dropdown <?php 
                 if($this->params['controller'] == 'users' && !($this->params['action'] == 'changePassword')) {

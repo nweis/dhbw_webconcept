@@ -67,9 +67,11 @@ class ConceptMapsController extends AppController {
 					)
 				);
 			}
-
-
 		}
+
+		$study_groups = $this->ConceptMap->StudyGroup->find('list');
+
+		$this->set(compact('study_groups'));
 	}
 
 /**
@@ -88,7 +90,7 @@ class ConceptMapsController extends AppController {
 			$data = $this->request->data;
 
 			// Prüfung, ob der Name bereits existiert
-			if(!$this->ConceptMap->checkIfNameExists($data['ConceptMap']['name'])) {			
+			if(!$this->ConceptMap->checkIfNameExistsForGivenId($data['ConceptMap']['name'], $id)) {			
 
 				if ($this->ConceptMap->save($data)) {
 					$this->Session->setFlash(__('Die Concept-Map wurde gespeichert.'), 'alert', array(
@@ -115,6 +117,9 @@ class ConceptMapsController extends AppController {
 			$options = array('conditions' => array('ConceptMap.' . $this->ConceptMap->primaryKey => $id));
 			$this->request->data = $this->ConceptMap->find('first', $options);
 		}
+
+		$study_groups = $this->ConceptMap->StudyGroup->find('list');
+		$this->set(compact('study_groups'));
 	}
 
 /**

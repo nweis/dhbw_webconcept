@@ -1,12 +1,9 @@
-<?php $this->Html->addCrumb(__('Concept-Maps'), '/concept_maps'); ?>
-<?php $this->Html->addCrumb($conceptMap['ConceptMap']['name'], ''); ?>
-
-<div class="keywords index">
+<div class="studyGroups index">
 
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
-				<h1><?php echo __('Begriffe von').' '.$conceptMap['ConceptMap']['name']; ?></h1>
+				<h1><?php echo __('Studiengruppen'); ?></h1>
 			</div>
 		</div><!-- end col md 12 -->
 	</div><!-- end row -->
@@ -23,18 +20,12 @@
 							<ul class="nav nav-pills nav-stacked">
 								<li>
 									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Begriff erstellen'),
-										array('action' => 'add', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
+										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Studiengruppe erstellen'),
+										array('action' => 'add'), array('escape' => false)); ?>
 								</li>
 								<li>
 									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept Map anzeigen'),
-										array('controller' => 'concept_maps',
-										'action' => '../../../cm/'.$conceptMap['ConceptMap']['name']), array('escape' => false)); ?>
-								</li>			
-								<li>
-									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; zurück zur Übersicht'),
+										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept-Maps anzeigen'),
 										array('controller' => 'concept_maps',
 										'action' => 'index'), array('escape' => false)); ?>
 								</li>
@@ -55,14 +46,14 @@
 					</tr>
 				</thead>
 				<tbody>
-				<?php foreach ($keywords as $keyword): ?>
+				<?php foreach ($studyGroups as $studyGroup): ?>
 					<tr>
-						<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['created']); ?>&nbsp;</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['modified']); ?>&nbsp;</td>
+						<td><?php echo h($studyGroup['StudyGroup']['name']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.y, H:m', $studyGroup['StudyGroup']['created']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.y, H:m', $studyGroup['StudyGroup']['modified']); ?>&nbsp;</td>
 						<td class="actions">
-							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $keyword['Keyword']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $keyword['Keyword']['id']), array('escape' => false), __('Sind Sie sicher, dass # %s löschen wollen?', $keyword['Keyword']['id'])); ?>
+							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $studyGroup['StudyGroup']['id']), array('escape' => false)); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $studyGroup['StudyGroup']['id']), array('escape' => false), __('Sind Sie sicher, dass die Studiengruppe "%s" löschen wollen?', $studyGroup['StudyGroup']['name'])); ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>

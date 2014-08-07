@@ -23,6 +23,12 @@
 										__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp; Concept Map erstellen'),
 										array('action' => 'add'), array('escape' => false)); ?>
 								</li>
+								<li>
+									<?php echo $this->Html->link(
+										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Studiengruppen anzeigen'),
+										array('controller' => 'study_groups',
+										'action' => 'index'), array('escape' => false)); ?>
+								</li>
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->
@@ -34,6 +40,7 @@
 				<thead>
 					<tr>
 						<th><?php echo $this->Paginator->sort('name', __('Name')); ?></th>
+						<th><?php echo __('Zugeordnete Studiengruppen'); ?></th>
 						<th><?php echo $this->Paginator->sort('created', _('Erstellt')); ?></th>
 						<th><?php echo $this->Paginator->sort('modified', __('Verändert')); ?></th>
 						<th class="actions"></th>
@@ -50,11 +57,32 @@
 								$conceptMap['ConceptMap']['id']
 								)
 							); ?>&nbsp;</td>
+						<td>
+						<?php 
+							$amountOfStudyGroups = count($conceptMap['StudyGroup']);
+							if($amountOfStudyGroups == 0) {
+									echo __('-');
+								}
+						?>
+						<?php foreach ($conceptMap['StudyGroup'] as $studyGroup): ?>
+							<?php
+								if($amountOfStudyGroups == 0) {
+									echo __('- Keine Studiengruppen zugeordnet -');
+								}
+								if($amountOfStudyGroups == 1) {
+									echo $studyGroup['name'];
+								}else{
+									echo $studyGroup['name'].', ';
+								}
+								$amountOfStudyGroups = $amountOfStudyGroups - 1;
+							?>
+						<?php endforeach ?>
+						</td>
 						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['created']); ?>&nbsp;</td>
 						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['modified']); ?>&nbsp;</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $conceptMap['ConceptMap']['id']), array('escape' => false), __('Sind Sie sicher, dass # %s löschen wollen?', $conceptMap['ConceptMap']['id'])); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $conceptMap['ConceptMap']['id']), array('escape' => false), __('Sind Sie sicher, dass Sie die Concept-Map "%s" löschen wollen? Alle zugeordneten Keywords werden ebenfalls gelöscht.', $conceptMap['ConceptMap']['name'])); ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>

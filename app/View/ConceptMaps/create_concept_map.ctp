@@ -13,7 +13,6 @@
                 <li class="keyword" draggable="true" id="<?php echo $keyword['id'] ?>"><?php echo $keyword['name'] ?></li>    
             <?php endforeach ?>
         </ul>
-        
         <!-- Diesen Button sollte man noch schöner positionieren -->
         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
     </div>

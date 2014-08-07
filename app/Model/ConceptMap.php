@@ -48,6 +48,27 @@ class ConceptMap extends AppModel {
 		)
 	);
 
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'StudyGroup' => array(
+			'className' => 'StudyGroup',
+			'joinTable' => 'concept_maps_study_groups',
+			'foreignKey' => 'concept_map_id',
+			'associationForeignKey' => 'study_group_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+
 	/**
 	 * Methode wird verwendet, um den Namen einer bestimmten Concept-Map zu erhalten
 	 * @param  int $id 	  id einer Concept-Map
@@ -75,7 +96,11 @@ class ConceptMap extends AppModel {
 		return $conceptMapNameArray;
 	}
 
-
+	/**
+	 * Methode findet eine ConceptMap anhand des Namens und gibt diese dann mit allen relatierten Informationen zurück
+	 * @param  String $conceptMapName Name einer ConceptMap
+	 * @return ConceptMap             Concept-Map-Objekt
+	 */
 	public function findConceptMapByName($conceptMapName) {
 		
 		// Nach Concept-Map anhand des Namens suchen
@@ -92,6 +117,27 @@ class ConceptMap extends AppModel {
 		}else{
 			return $conceptMap;
 		}
+	}
+
+
+	public function checkIfNameExists($conceptMapName) {
+		// Nach Concept-Map anhand des Namens suchen
+		$conceptMap = $this->find('first', array(
+			'conditions' => array(
+				'ConceptMap.name' => $conceptMapName
+				),
+			'fields' => array(
+				'ConceptMap.id'
+				)
+			)
+		);
+
+		if(empty($conceptMap)) {
+			return false;			
+		}else{
+			return true;
+		}
+
 	}
 
 }

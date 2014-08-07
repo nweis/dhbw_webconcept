@@ -29,7 +29,7 @@ class ConceptMapsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->ConceptMap->recursive = 0;
+		$this->ConceptMap->recursive = 1;
 		$this->set('conceptMaps', $this->Paginator->paginate());
 	}
 
@@ -40,21 +40,35 @@ class ConceptMapsController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->ConceptMap->create();
-			if ($this->ConceptMap->save($this->request->data)) {
-				$this->Session->setFlash(__('Die Concept-Map wurde gespeichert.'), 'alert', array(
-					'plugin' => 'BoostCake',
-					'class' => 'alert-success'
-					)
-				);
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('Die Concept-Map konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+
+			$data = $this->request->data;
+
+			// Prüfung, ob der Name bereits existiert
+			if(!$this->ConceptMap->checkIfNameExists($data['ConceptMap']['name'])) {
+				$this->ConceptMap->create();
+				if ($this->ConceptMap->save($this->request->data)) {
+					$this->Session->setFlash(__('Die Concept-Map wurde gespeichert.'), 'alert', array(
+						'plugin' => 'BoostCake',
+						'class' => 'alert-success'
+						)
+					);
+					return $this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('Die Concept-Map konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+						'plugin' => 'BoostCake',
+						'class' => 'alert-danger'
+						)
+					);
+				}
+			}else{ // Falls die ConceptMap bereits existiert, gebe einen Fehler aus
+				$this->Session->setFlash(__('Der Name einer Concept-Map muss eindeutig sein. Der gewählte Name existiert bereits.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)
 				);
 			}
+
+
 		}
 	}
 
@@ -70,15 +84,28 @@ class ConceptMapsController extends AppController {
 			throw new NotFoundException(__('Die Concept-Map konnte nicht gefunden werden'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-			if ($this->ConceptMap->save($this->request->data)) {
-				$this->Session->setFlash(__('Die Concept-Map wurde gespeichert.'), 'alert', array(
-					'plugin' => 'BoostCake',
-					'class' => 'alert-success'
-					)
-				);
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('Die Concept-Map konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+
+			$data = $this->request->data;
+
+			// Prüfung, ob der Name bereits existiert
+			if(!$this->ConceptMap->checkIfNameExists($data['ConceptMap']['name'])) {			
+
+				if ($this->ConceptMap->save($data)) {
+					$this->Session->setFlash(__('Die Concept-Map wurde gespeichert.'), 'alert', array(
+						'plugin' => 'BoostCake',
+						'class' => 'alert-success'
+						)
+					);
+					return $this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('Die Concept-Map konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+						'plugin' => 'BoostCake',
+						'class' => 'alert-danger'
+						)
+					);
+				}
+			}else{ // Falls die ConceptMap bereits existiert, gebe einen Fehler aus
+				$this->Session->setFlash(__('Der Name einer Concept-Map muss eindeutig sein. Der gewählte Name existiert bereits.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)

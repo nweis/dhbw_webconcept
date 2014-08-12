@@ -58,11 +58,11 @@
 				<?php foreach ($keywords as $keyword): ?>
 					<tr>
 						<td><?php echo h($keyword['Keyword']['name']); ?>&nbsp;</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['created']); ?>&nbsp;</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m', $keyword['Keyword']['modified']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:i', $keyword['Keyword']['created']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:i', $keyword['Keyword']['modified']); ?>&nbsp;</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $keyword['Keyword']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $keyword['Keyword']['id']), array('escape' => false), __('Sind Sie sicher, dass # %s löschen wollen?', $keyword['Keyword']['id'])); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $keyword['Keyword']['id']), array('escape' => false), __('Sind Sie sicher, dass Sie den Begriff "%s" löschen wollen?', $keyword['Keyword']['name'])); ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>

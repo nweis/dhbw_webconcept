@@ -78,8 +78,8 @@
 							?>
 						<?php endforeach ?>
 						</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['created']); ?>&nbsp;</td>
-						<td><?php echo $this->Time->format('d.m.Y, H:m' ,$conceptMap['ConceptMap']['modified']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:i' ,$conceptMap['ConceptMap']['created']); ?>&nbsp;</td>
+						<td><?php echo $this->Time->format('d.m.Y, H:i' ,$conceptMap['ConceptMap']['modified']); ?>&nbsp;</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
 							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $conceptMap['ConceptMap']['id']), array('escape' => false), __('Sind Sie sicher, dass Sie die Concept-Map "%s" löschen wollen? Alle zugeordneten Keywords werden ebenfalls gelöscht.', $conceptMap['ConceptMap']['name'])); ?>

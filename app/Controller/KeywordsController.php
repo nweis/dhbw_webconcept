@@ -22,12 +22,12 @@ class KeywordsController extends AppController {
  */
 	public function index($conceptMapId) {
 
+		debug($conceptMapId); exit;
 		// Prüfung, ob gesuchte Concept-Map existiert
 		if(!$this->Keyword->ConceptMap->exists($conceptMapId)) {
 			throw new NotFoundException(__('Die angegebene Concept-Map existiert nicht.'));
 			
 		}
-
 		// Concept-Map Namen ziehen
 		$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($conceptMapId);
 
@@ -56,11 +56,13 @@ class KeywordsController extends AppController {
 		$conceptMap = $this->Keyword->ConceptMap->getNameAndIdOfConceptMap($conceptMapId);
 
 		if ($this->request->is('post')) {
-			
+
+
 			$data = $this->request->data['Keyword'];
 
+
 			if ($this->Keyword->saveAll($data)) {
-				$this->Session->setFlash(__('Der Begriff wurde gespeichert.'), 'alert', array(
+				$this->Session->setFlash(__('Der/Die Begriff(e) wurde(n) gespeichert.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 					)
@@ -68,7 +70,7 @@ class KeywordsController extends AppController {
 				return $this->redirect(array('action' => 'index', $conceptMap['ConceptMap']['id']));
 			} else {
 				
-				$this->Session->setFlash(__('Der Begriff konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
+				$this->Session->setFlash(__('Der/Die Begriff(e) konnte(n) nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-danger'
 					)
@@ -79,6 +81,8 @@ class KeywordsController extends AppController {
 		$this->set(compact('conceptMap'));
 	}
 
+
+
 /**
  * edit method
  *
@@ -87,18 +91,19 @@ class KeywordsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-		
 		if (!$this->Keyword->exists($id)) {
 			throw new NotFoundException(__('Der Begriff konnte nicht gefunden werden'));
 		}
+
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Keyword->save($this->request->data)) {
+
 				$this->Session->setFlash(__('Der Begriff wurde gespeichert.'), 'alert', array(
 					'plugin' => 'BoostCake',
 					'class' => 'alert-success'
 					)
 				);
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('action' => 'index', $conceptMap['ConceptMap']['id']));
 			} else {
 				$this->Session->setFlash(__('Der Begriff konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.'), 'alert', array(
 					'plugin' => 'BoostCake',

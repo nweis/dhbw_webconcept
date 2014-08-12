@@ -21,6 +21,7 @@
 					<?php echo $this->Form->submit(__('Speichern'), array('class' => 'btn btn-primary')); ?>
 				</div>
 
+			<?php echo $this->Form->hidden('concept_map_id', array('value' => $conceptMap['ConceptMap']['id']));?>
 			<?php echo $this->Form->end() ?>
 
 		</div><!-- end col md 12 -->

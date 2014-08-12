@@ -22,7 +22,6 @@ class KeywordsController extends AppController {
  */
 	public function index($conceptMapId) {
 
-		debug($conceptMapId); exit;
 		// Prüfung, ob gesuchte Concept-Map existiert
 		if(!$this->Keyword->ConceptMap->exists($conceptMapId)) {
 			throw new NotFoundException(__('Die angegebene Concept-Map existiert nicht.'));

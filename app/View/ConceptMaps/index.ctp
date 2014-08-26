@@ -28,7 +28,8 @@
 										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Studiengruppen anzeigen'),
 										array('controller' => 'study_groups',
 										'action' => 'index'), array('escape' => false)); ?>
-								</li>
+								</li>								
+							
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->

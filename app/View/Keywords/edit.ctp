@@ -1,7 +1,9 @@
-<?php $this->Html->addCrumb(__('Concept-Maps'), '/concept_maps'); ?>
-<?php $this->Html->addCrumb($conceptMap['ConceptMap']['name'], '/keywords/index/'.$conceptMap['ConceptMap']['id']); ?>
-<?php $this->Html->addCrumb(__('Begriff bearbeiten')); ?>
-
+<?php
+	// Breadcrumb-Leiste hinzu fügen
+	$this->Html->addCrumb(__('Concept-Maps'), '/concept_maps');
+	$this->Html->addCrumb($conceptMap['ConceptMap']['name'], '/keywords/index/'.$conceptMap['ConceptMap']['id']);
+	$this->Html->addCrumb(__('Begriff bearbeiten')); 
+?>
 <div class="keywords form">
 	<div class="row">
 		<div class="col-md-12">

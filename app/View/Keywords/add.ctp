@@ -31,7 +31,7 @@
 				<div id="moreInputs" value="0"></div>
 				<div class="form-group">
 					<?php echo $this->Form->submit(__('Speichern'), array('class' => 'btn btn-primary', 'div' => false)); ?>
-					<input class="btn btn-info" onclick="newInputField()" value="<?php echo __('Weiterer Begriff');?>">
+					<input class="btn btn-info" id="addKeywordBut" onclick="newInputField()" value="<?php echo __('Weiterer Begriff');?>">
 					<input class="btn btn-info" onclick="delInputField()" id="dif" style="display:none" value="<?php echo __('Lösche letzten Begriff');?>">
 				</div>
 			

@@ -28,20 +28,30 @@
 								</li>
 								<li>
 									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; Concept Map anzeigen'),
+										__('<span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp; Concept Map anzeigen'),
 										array('controller' => 'concept_maps',
 										'action' => '../../../cm/'.$conceptMap['ConceptMap']['name']), array('escape' => false)); ?>
-								</li>			
+								</li>
+								<li>
+									<?php echo $this->Html->link(
+										__('<span class="glyphicon glyphicon-signal"></span>&nbsp;&nbsp; Resultate anzeigen'),
+										array('action' => 'show_saved_concept_map'), array('escape' => false)); ?>
+								</li>		
 								<li>
 									<?php echo $this->Html->link(
 										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; zurück zur Übersicht'),
 										array('controller' => 'concept_maps',
 										'action' => 'index'), array('escape' => false)); ?>
 								</li>
+
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->
 			</div><!-- end actions -->
+			<div>
+				Link zur Concept-Map:<br /><br />
+				<a id="linkValue"><?php echo __('http://dh.localhost/cm/').$conceptMap['ConceptMap']['name']; ?></a><br />
+			</div>
 		</div><!-- end col md 3 -->
 
 		<div class="col-md-9">

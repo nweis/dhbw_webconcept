@@ -15,7 +15,7 @@
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 230px;
 }
 
 #sidebar-wrapper {
@@ -44,15 +44,30 @@
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -230px;
 }
 
-#menu-toggle {
-    position: fixed;
-    bottom: 0;
-
+#sidebarMenu{
+position:absolute;
+left:0;
+top:0px;
+width:30px;
+height:63px;
+overflow: hidden;
+z-index:1000;
+border-radius: 0 8px 8px 0;
+box-shadow: 0 5px 6px rgba(0,0,0,0.5);
+background:-moz-linear-gradient(center top , #efefef, #cacaca) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
+#sidebarMenu a{
+    width:15px;
+}
+#sidebarMenu a span{
+    font-size:1.3em;
+    padding:5px;
+    
+}
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -70,6 +85,7 @@
     display: block;
     text-decoration: none;
     color: #999999;
+    padding-left:30px;
 }
 
 .sidebar-nav li:hover {
@@ -99,6 +115,10 @@
 .sidebar-nav > .sidebar-brand :hover {
     color: #fff;
     background: none;
+}
+#inputNewKeyword{
+    background:transparent;
+    border:none;
 }
 
 @media(min-width:768px) {

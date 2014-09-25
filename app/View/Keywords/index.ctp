@@ -35,7 +35,7 @@
 								<li>
 									<?php echo $this->Html->link(
 										__('<span class="glyphicon glyphicon-signal"></span>&nbsp;&nbsp; Resultate anzeigen'),
-										array('action' => 'show_saved_concept_map'), array('escape' => false)); ?>
+										array('action' => 'show'), array('escape' => false)); ?>
 								</li>		
 								<li>
 									<?php echo $this->Html->link(

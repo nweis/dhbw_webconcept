@@ -167,4 +167,6 @@ class ConceptMapsController extends AppController {
 		// Variablen an View übergeben
 		$this->set('conceptMap', $conceptMap);
 	}
+
+
 }

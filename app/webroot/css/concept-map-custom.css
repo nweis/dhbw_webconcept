@@ -52,7 +52,7 @@ position:absolute;
 left:0;
 top:0px;
 width:30px;
-height:63px;
+height:90px;
 overflow: hidden;
 z-index:1000;
 border-radius: 0 8px 8px 0;
@@ -105,6 +105,13 @@ background:-moz-linear-gradient(center top , #efefef, #cacaca) repeat scroll 0 0
     line-height: 60px;
     color: #fff;
     background: rgba(255,255,255,0.2);
+}
+.sidebar-nav > .sidebar-brand2 {
+    height: 45px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
     border-bottom: 1px solid #fff;
 }
 
@@ -119,6 +126,14 @@ background:-moz-linear-gradient(center top , #efefef, #cacaca) repeat scroll 0 0
 #inputNewKeyword{
     background:transparent;
     border:none;
+}
+.ownKeyword{
+    font-style: italic;
+}
+.borderTop{
+    margin-top:5px;
+    border-top:solid 1px black;
+    padding-top:5px;
 }
 
 @media(min-width:768px) {

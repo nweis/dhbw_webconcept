@@ -425,3 +425,6 @@ input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
 @media screen and (max-width: 320px){
 	.sp-slideshow { height: 158px; }
 }
+.setScrollable{
+	overflow: scroll;
+}

@@ -58,6 +58,10 @@ border-radius: 8px 0 0 8px;
 box-shadow: 0 5px 6px rgba(0,0,0,0.5);
 background: Silver;
 }
+.setScrollable{
+    overflow: scroll;
+    height:90%;
+}
 #helpRight a{
     padding:5px;
     font-size:16pt;
@@ -65,6 +69,7 @@ background: Silver;
 #help{
     z-index:100000;
     top: 25%;
+    height:90%;
 }
 #help div h2{
     text-decoration: underline;

@@ -20,7 +20,7 @@
 <?php endif ?>
 
 <aside id="help" class="avgrund-popup col-md-6">
-        <div>
+        <div class="setScrollable">
             <h2>HELP:</h2>
             <h3>Concept-Map-Objekte positionieren</h3>
             <p>Um eine Concept-Map zu erstellen ziehen Sie (per Drag & Drop) die Begriffe aus der linken Spalte in den weißen Bereich der Webseite.
@@ -37,8 +37,9 @@
             <p>Um die Concept-Map zu speichern und die Arbeit zu beenden, klicken Sie oben links auf das Disketten-Symbol. Eine Sicherheits-Abfrage wird angezeigt, die Sie mit "Ja" bestätigen.
             Ihre Concept-Map wird gespeichert und Sie können von nun an nichts mehr ändern.
             </p>
+            </div>
             <button class="btn btn-primary" type="button" value="close" onclick="hidePopup()">Schließen</button>
-        </div>
+        
     </aside>    
 
 <div id="wrapper">    
@@ -58,7 +59,7 @@
             <a href="" id="saveCM" class="new borderTop"><span class="glyphicon glyphicon-floppy-open"></span></a>
     </div>
     <div id="helpRight">
-        <a href="#" onclick="helpPopup()">?</a>
+        <a href="" onclick="helpPopup()">?</a>
     </div>
     <!-- In diesem Container können die einzelnen Keywords per D&D positioniert werden. -->
     <div id="main">

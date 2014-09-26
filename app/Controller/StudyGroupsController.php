@@ -93,9 +93,11 @@ class StudyGroupsController extends AppController {
  */
 	public function delete($id = null) {
 		$this->StudyGroup->id = $id;
+
 		if (!$this->StudyGroup->exists()) {
 			throw new NotFoundException(__('Die Studiengruppe konnte nicht gefunden werden.'));
 		}
+		
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->StudyGroup->delete()) {
 			$this->Session->setFlash(__('Die Studiengruppe wurde gelöscht.'), 'alert', array(

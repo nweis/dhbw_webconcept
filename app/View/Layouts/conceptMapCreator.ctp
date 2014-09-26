@@ -17,7 +17,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$cakeDescription = __('CakePHP Boilerplate by flux-services.net');
+$cakeDescription = __('DHBW Concept-Map-Tool');
 ?>
 <!DOCTYPE html>
 <html>

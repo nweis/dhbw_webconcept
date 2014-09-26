@@ -116,18 +116,16 @@ class AppController extends Controller {
 				'logout' => array(1, 2),
 				'add' => array(1),
 				'index' => array(1),
-				'add' => array(1),
 				'edit' => array(1),
 				'delete' => array(1),
 				'view' => array(1),
 				'changePassword' => array(1, 2)
 			),
 			
-		// Berechtigungen für ConceptMaps
+			// Berechtigungen für ConceptMaps
 			'conceptmaps' => array(
 				'add' => array(1, 2),
 				'index' => array(1, 2),
-				'add' => array(1, 2),
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
 			),
@@ -136,7 +134,6 @@ class AppController extends Controller {
 			'keywords' => array(
 				'add' => array(1, 2),
 				'index' => array(1, 2),
-				'add' => array(1, 2),
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
 			),
@@ -145,11 +142,19 @@ class AppController extends Controller {
 			'studygroups' => array(
 				'add' => array(1, 2),
 				'index' => array(1, 2),
-				'add' => array(1, 2),
 				'edit' => array(1, 2),
 				'delete' => array(1, 2),
 			),
 
+			// Berechtigungen für Auswertungen
+			'evaluations' => array(
+				'add' => array(1, 2),
+				'index' => array(1, 2),
+				'add' => array(1, 2),
+				'edit' => array(1, 2),
+				'delete' => array(1, 2),
+				'view' => array(1, 2),
+			),
 
 	);
 		// Wenn der Controller-Name ($this->name) in allowedActions vorkommt, dann...

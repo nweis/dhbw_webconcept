@@ -51,7 +51,7 @@ var Avgrund = (function(){
 		document.removeEventListener( 'touchstart', onDocumentClick, false );
 
 		removeClass( container, 'avgrund-active' );
-		removeClass( popup, 'avgrund-popup-animate')
+		removeClass( popup, 'avgrund-popup-animate');
 	}
 
 	function disableBlur() {
@@ -82,11 +82,13 @@ var Avgrund = (function(){
 		disableBlur: disableBlur,
 		show: show,
 		hide: hide
-	}
+	};
 
 })();
 function hidePopup() {
-    var persgrp = $('input[name=Personengruppe]:checked', '#PersgrpForm').val();
+    var persgrp = $('input[name=Personengruppe]:checked', '#PersgrpForm').attr('id');
+    var studyGroupId = $('input[name=Personengruppe]:checked', '#PersgrpForm').val();
+    $('#EvaluationStudyGroupId').val(studyGroupId);
     $('#getPersgrp').html(persgrp);
     Avgrund.hide();
 }

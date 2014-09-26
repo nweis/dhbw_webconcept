@@ -39,7 +39,7 @@ class PagesController extends AppController {
 	
 	function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow(array('display', 'home', 'setLanguage'));
+		$this->Auth->allow(array('display', 'home', 'setLanguage', 'thanks'));
 	}
 
 /**
@@ -84,5 +84,9 @@ class PagesController extends AppController {
 		Configure::write('Config.language', $languageCode);
         CakeSession::write('Config.language', $languageCode);
 		return $this->redirect($this->referer());
+	}
+
+	public function thanks() {
+
 	}
 }

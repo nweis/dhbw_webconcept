@@ -159,8 +159,4 @@ class KeywordsController extends AppController {
 		return $this->redirect(array('action' => 'index', $conceptMapId));
 	}
 
-	public function show($conceptMapName) {
-
-	}
-
 }

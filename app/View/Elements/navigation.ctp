@@ -23,7 +23,10 @@ $username = $user['username'];
             	<a href="/"><?php echo __('Startseite'); ?></a>
             </li>
 
-            <li <?php if($this->params['controller'] == 'concept_maps') {echo 'class="active"';} ?>>
+            <li <?php if($this->params['controller'] == 'concept_maps' ||
+              $this->params['controller'] == 'keywords' ||
+              $this->params['controller'] == 'evaluations'
+            ) {echo 'class="active"';} ?>>
               <a href="/concept_maps"><?php echo __('Concept-Maps'); ?></a>
             </li>
 

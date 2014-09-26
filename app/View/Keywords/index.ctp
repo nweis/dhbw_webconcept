@@ -35,15 +35,8 @@
 								<li>
 									<?php echo $this->Html->link(
 										__('<span class="glyphicon glyphicon-signal"></span>&nbsp;&nbsp; Resultate anzeigen'),
-										array('action' => 'show'), array('escape' => false)); ?>
+										array('controller' => 'evaluations',  'action' => 'index', $conceptMap['ConceptMap']['id']), array('escape' => false)); ?>
 								</li>		
-								<li>
-									<?php echo $this->Html->link(
-										__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp; zurück zur Übersicht'),
-										array('controller' => 'concept_maps',
-										'action' => 'index'), array('escape' => false)); ?>
-								</li>
-
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->

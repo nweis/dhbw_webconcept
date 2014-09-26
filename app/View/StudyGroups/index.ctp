@@ -53,7 +53,7 @@
 						<td><?php echo $this->Time->format('d.m.y, H:m', $studyGroup['StudyGroup']['modified']); ?>&nbsp;</td>
 						<td class="actions">
 							<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('action' => 'edit', $studyGroup['StudyGroup']['id']), array('escape' => false)); ?>
-							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $studyGroup['StudyGroup']['id']), array('escape' => false), __('Sind Sie sicher, dass die Studiengruppe "%s" löschen wollen?', $studyGroup['StudyGroup']['name'])); ?>
+							<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('action' => 'delete', $studyGroup['StudyGroup']['id']), array('escape' => false), __('Sind Sie sicher, dass die Studiengruppe "%s" löschen wollen? Alle Auswertungen der Studiengruppe werden ebenfalls gelöscht.', $studyGroup['StudyGroup']['name'])); ?>
 						</td>
 					</tr>
 				<?php endforeach; ?>

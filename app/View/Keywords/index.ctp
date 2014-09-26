@@ -43,7 +43,9 @@
 			</div><!-- end actions -->
 			<div>
 				Link zur Concept-Map:<br /><br />
-				<a id="linkValue"><?php echo __('http://dh.localhost/cm/').$conceptMap['ConceptMap']['name']; ?></a><br />
+				<?php $pieces = parse_url(Router::url('/', true));
+				?>
+				<a id="linkValue"><?php echo $pieces['host'].'/cm/'.$conceptMap['ConceptMap']['name']; ?></a><br />
 			</div>
 		</div><!-- end col md 3 -->
 

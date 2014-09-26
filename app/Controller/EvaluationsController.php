@@ -78,6 +78,9 @@ class EvaluationsController extends AppController {
 		if (!$this->Evaluation->exists()) {
 			throw new NotFoundException(__('Das Resultat konnte nicht gefunden werden.'));
 		}
+
+		$evaluation = $this->Evaluation->findById($id);
+
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Evaluation->delete()) {
 			$this->Session->setFlash(__('Das Resultat wurde gelöscht.'), 'alert', array(
@@ -92,6 +95,6 @@ class EvaluationsController extends AppController {
 					)
 				);
 		}
-		return $this->redirect(array('action' => 'index'));
+		return $this->redirect('/evaluations/index/'.$evaluation['ConceptMap']['id']);
 	}
 }

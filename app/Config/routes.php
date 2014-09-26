@@ -28,7 +28,7 @@
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-	Router::connect('/cm/*', array('controller' => 'conceptmaps', 'action' => 'createConceptMap'));
+	Router::connect('/cm/*', array('controller' => 'concept_maps', 'action' => 'createConceptMap'));
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/setLanguage/*', array('controller' => 'pages', 'action' => 'setLanguage'));
 

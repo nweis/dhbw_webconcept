@@ -96,3 +96,6 @@ function hidePopup() {
 $('#popup').ready(function(){
     Avgrund.show( "#popup" );
 });
+function helpPopup(){
+	Avgrund.show( "#help" );
+}

@@ -6,13 +6,6 @@
  * Created by Hakim El Hattab, http://hakim.se
  */
  
-.avgrund-active body {
-	-webkit-transform: scale( 0.9 );
-	   -moz-transform: scale( 0.9 );
-	    -ms-transform: scale( 0.9 );
-	     -o-transform: scale( 0.9 );
-	        transform: scale( 0.9 );
-}
 
 .avgrund-cover {
 	position: absolute;

@@ -19,6 +19,27 @@
     </aside>    
 <?php endif ?>
 
+<aside id="help" class="avgrund-popup col-md-6">
+        <div>
+            <h2>HELP:</h2>
+            <h3>Concept-Map-Objekte positionieren</h3>
+            <p>Um eine Concept-Map zu erstellen ziehen Sie (per Drag & Drop) die Begriffe aus der linken Spalte in den weißen Bereich der Webseite.
+                Per Drag & Drop können Sie bereits angelegte Objekte neu poositionieren</p>
+            <h3>Beziehungen zwischen 2 Objekten erstellen</h3>
+            <p>Um eine Beziehung zwischen 2 Objekten herzustellen, klicken Sie (per Drag & Drop) auf ein organgenes Quadrat eines Objektes. Ziehen Sie dieses in ein anderes Objekt und lassen es dort los. Geben Sie einen Namen ein um die Beziehung zu betiteln. Ein Objekt kann maximal 5 Beziehungen besitzen. Die Beziehungen sind ausschließlich gerichtet möglich.</p>
+            <h3>Objekte oder Beziehungen korrigieren/löschen</h3>
+            <p>Um ein Objekt oder eine Beziehung zu löschen, klicken Sie per Doppelklick auf das entsprechende Objekt oder die entsprechende Beziehung.
+                Die Beziehung verschwindet und eine neue Beziehung kann erstellt werden. Das Objekt erscheint nach einem Doppelklick wieder in der Liste.</p>
+            </p>
+            <h3>Neue Begriffe anlegen</h3>
+            <p>Um weitere Begriffe anzulegen, klicken Sie oben links im Menü auf das Plus-Zeichen. Ein neues Eingabefeld wird unter den Begriffen in der Liste erscheinen. Geben Sie den Begriff ein und bestätigen diesen mit der Enter-Taste.</p>
+            <h3>Concept-Map speichern</h3>
+            <p>Um die Concept-Map zu speichern und die Arbeit zu beenden, klicken Sie oben links auf das Disketten-Symbol. Eine Sicherheits-Abfrage wird angezeigt, die Sie mit "Ja" bestätigen.
+            Ihre Concept-Map wird gespeichert und Sie können von nun an nichts mehr ändern.
+            </p>
+            <button class="btn btn-primary" type="button" value="close" onclick="hidePopup()">Schließen</button>
+        </div>
+    </aside>    
 
 <div id="wrapper">    
     <div id="sidebar-wrapper">      
@@ -35,6 +56,9 @@
             <a href="#menu-toggle" onclick="changeClass()" id="menu-toggle"><span id="changeIcon" class="glyphicon glyphicon-chevron-left"></span></a>
             <a href="" id="newOwnKeyword" class="new"><span class="glyphicon glyphicon-plus"></span></a>
             <a href="" id="saveCM" class="new borderTop"><span class="glyphicon glyphicon-floppy-open"></span></a>
+    </div>
+    <div id="helpRight">
+        <a href="#" onclick="helpPopup()">?</a>
     </div>
     <!-- In diesem Container können die einzelnen Keywords per D&D positioniert werden. -->
     <div id="main">
@@ -53,38 +77,32 @@
 <div class="avgrund-cover"></div>
 <script>
 
-//x dient zum Hochzählen der IDs der neuen Keywords.
-var x = 1;
+x = 1;
 //Wenn der Button zum Hinzufügen eines Keywords geklickt wurde
 $('#newOwnKeyword').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
-    //Wenn die Klasse = "new" ist, führe das aus.
-    if($(this).attr("class") == "new"){
-        $('#appendKeyword').append('<li id="deleteLi"><input id="inputNewKeyword" placeholder="Neues Keyword"/></li>');
+    if($('#deleteLi').length > 0){
         $('#inputNewKeyword').focus();
-        //Die Klasse wird zu save geändert, somit kann der Button Klick unterschieden werden, ob ein neues Keyword hinzugefügt werden soll, oder ob dies bereits passierte und es noch gespeichert werden muss.
-        $('#newOwnKeyword').attr('class', 'save');
-        //Icon des Buttons ändern.
-        $('#newOwnKeyword span').switchClass("glyphicon-plus","glyphicon-floppy-saved");
-
         return false;
     }
     else{
-        //Wenn eine Eingabe erfolte!
+        //Wenn die Klasse = "new" ist, führe das aus.
+        $('#appendKeyword').append('<li id="deleteLi"><input id="inputNewKeyword" placeholder="Neues Keyword"/></li>');
+        $('#inputNewKeyword').focus();
+        return false;
+    }
+});
+$(document).keypress(function(e) {
+    if(e.which == 13) {
         var val = $('#inputNewKeyword').val().trim();
         if(val != ""){
             $('#appendKeyword').append('<li id="new'+x+'" class="keyword ownKeyword" draggable="true">'+val+'</li>');
             addEventListenerForDragStart("new"+x);
+            $('#deleteLi').remove();
             x = x+1;
         }
-        //Ändere Button, um neue Einghabe zu ermöglichen
-        $('#deleteLi').remove();
-        $('#newOwnKeyword').attr('class', 'new');
-        $('#newOwnKeyword span').switchClass("glyphicon-floppy-saved","glyphicon-plus");
-        
     }
-    
 });
 $('#saveCM').click(function(e) {
     e.preventDefault();

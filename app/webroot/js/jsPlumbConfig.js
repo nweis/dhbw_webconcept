@@ -1,11 +1,12 @@
 var instance;
 var globalFadeEffectInMilliSeconds = 400;
 
+
 jsPlumb.ready(function() {
 
 
 	init();
-	
+
 	/**
 	 * Init-Methode für den initialen Start der visuellen Concept-Map-Erstellung
 	 * @return {[type]} [description]
@@ -14,6 +15,8 @@ jsPlumb.ready(function() {
 
 	// setup some defaults for jsPlumb.
 	instance = jsPlumb.getInstance({
+
+
 		Endpoint : ["Dot", {radius:2}],
 		HoverPaintStyle : {strokeStyle:"#1e8151", lineWidth:2 },
 		ConnectionOverlays : [
@@ -52,7 +55,7 @@ jsPlumb.ready(function() {
     instance.bind("connection", function(info) {
     	var name = window.prompt("Gebe einen Namen für die Beziehung zwischen den beiden Elementen ein", "Name der Beziehung");
 	   	if(name == null){
- 			info.connection.getOverlay("label").setLabel("...nicht vergeben...");   		
+ 			info.connection.getOverlay("label").setLabel("...nicht vergeben...");
     	}
     	else{
 			info.connection.getOverlay("label").setLabel(name);
@@ -81,8 +84,9 @@ jsPlumb.ready(function() {
 				connector:[ "StateMachine", { curviness:20 } ],
 				connectorStyle:{ strokeStyle:"#5c96bc", lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 				maxConnections:5,
+				connectionsDetachable:false,
 				onMaxConnections:function(info, e) {
-					alert("Maximum connections (" + info.maxConnections + ") reached");
+					alert("Maximale Anzahl an Beziheungen (" + info.maxConnections + ") erreicht");
 				}
 			});
 		}
@@ -96,8 +100,9 @@ jsPlumb.ready(function() {
 					connector:[ "StateMachine", { curviness:20 } ],
 					connectorStyle:{ strokeStyle:"#5c96bc",lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 					maxConnections:5,
+					connectionsDetachable:false,
 					onMaxConnections:function(info, e) {
-						alert("Maximum connections (" + info.maxConnections + ") reached");
+						alert("Maximale Anzahl an Beziheungen (" + info.maxConnections + ") erreicht");
 					}
 				});
 			}
@@ -109,7 +114,8 @@ jsPlumb.ready(function() {
 		dropOptions:{ hoverClass:"dragHover" },
 		anchor:"Continuous",
 		allowLoopback:true,
-		anchor:"Continuous"
+		anchor:"Continuous",
+		connectionsDetachable:false
 	});
 
 
@@ -152,6 +158,7 @@ function changeClass(){
 			e.preventDefault();
 			$("#wrapper").toggleClass("toggled");
 		});
+
 		return;
 	}
 	
@@ -203,7 +210,8 @@ function changeClass(){
 		dropOptions:{ hoverClass:"dragHover" },
 		anchor:"Continuous",
 		allowLoopback:true,
-		anchor:"Continuous"
+		anchor:"Continuous",
+		connectionsDetachable:false
 		});
 
  	
@@ -214,6 +222,7 @@ function changeClass(){
 				connector:[ "StateMachine", { curviness:20 } ],
 				connectorStyle:{ strokeStyle:"#5c96bc", lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 				maxConnections:5,
+				connectionsDetachable:false,
 				onMaxConnections:function(info, e) {
 					alert("Maximum connections (" + info.maxConnections + ") reached");
 				}

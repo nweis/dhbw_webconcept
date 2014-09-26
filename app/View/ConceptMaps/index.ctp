@@ -29,7 +29,7 @@
 										array('controller' => 'study_groups',
 										'action' => 'index'), array('escape' => false)); ?>
 								</li>								
-							
+								
 							</ul>
 						</div><!-- end body -->
 				</div><!-- end panel -->

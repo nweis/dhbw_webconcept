@@ -1,9 +1,7 @@
 var instance;
 var globalFadeEffectInMilliSeconds = 400;
 
-
 jsPlumb.ready(function() {
-
 
 	init();
 
@@ -12,11 +10,8 @@ jsPlumb.ready(function() {
 	 * @return {[type]} [description]
 	 */
 
-
 	// setup some defaults for jsPlumb.
 	instance = jsPlumb.getInstance({
-
-
 		Endpoint : ["Dot", {radius:2}],
 		HoverPaintStyle : {strokeStyle:"#1e8151", lineWidth:2 },
 		ConnectionOverlays : [
@@ -81,10 +76,11 @@ jsPlumb.ready(function() {
 			instance.makeSource($("#concept-map .w"), {
 				filter:".ep",
 				anchor:"Continuous",
+				Endpoint : ["Dot", {radius:2}],	
+  				connectionsDetachable:false,
 				connector:[ "StateMachine", { curviness:20 } ],
 				connectorStyle:{ strokeStyle:"#5c96bc", lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 				maxConnections:5,
-				connectionsDetachable:false,
 				onMaxConnections:function(info, e) {
 					alert("Maximale Anzahl an Beziheungen (" + info.maxConnections + ") erreicht");
 				}
@@ -97,10 +93,11 @@ jsPlumb.ready(function() {
 				instance.makeSource(e, {
 					parent:p,
 					anchor:"Continuous",
+					Endpoint : ["Dot", {radius:2}],	
+  					connectionsDetachable:false,
 					connector:[ "StateMachine", { curviness:20 } ],
 					connectorStyle:{ strokeStyle:"#5c96bc",lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 					maxConnections:5,
-					connectionsDetachable:false,
 					onMaxConnections:function(info, e) {
 						alert("Maximale Anzahl an Beziheungen (" + info.maxConnections + ") erreicht");
 					}
@@ -112,10 +109,9 @@ jsPlumb.ready(function() {
 	// initialise all '.w' elements as connection targets.
 	instance.makeTarget($("#concept-map .w"), {
 		dropOptions:{ hoverClass:"dragHover" },
-		anchor:"Continuous",
-		allowLoopback:true,
-		anchor:"Continuous",
-		connectionsDetachable:false
+		anchor:"Continuous",	
+  		connectionsDetachable:false,
+		allowLoopback:true
 	});
 
 
@@ -207,11 +203,10 @@ function changeClass(){
 		
 		// Neues Keyword zum Ziel eines Connectors machen
 		instance.makeTarget(newKeyword, {
-		dropOptions:{ hoverClass:"dragHover" },
+		dropOptions:{ hoverClass:"dragHover" },	
+  		connectionsDetachable:false,
 		anchor:"Continuous",
-		allowLoopback:true,
-		anchor:"Continuous",
-		connectionsDetachable:false
+		allowLoopback:true
 		});
 
  	
@@ -219,10 +214,11 @@ function changeClass(){
 		instance.makeSource(newKeyword, {
 				filter:".ep",
 				anchor:"Continuous",
+				endpoint : ["Dot", {radius:2}],	
+  				connectionsDetachable:false,
 				connector:[ "StateMachine", { curviness:20 } ],
 				connectorStyle:{ strokeStyle:"#5c96bc", lineWidth:2, outlineColor:"transparent", outlineWidth:4 },
 				maxConnections:5,
-				connectionsDetachable:false,
 				onMaxConnections:function(info, e) {
 					alert("Maximum connections (" + info.maxConnections + ") reached");
 				}

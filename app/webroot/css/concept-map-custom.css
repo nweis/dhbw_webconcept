@@ -62,9 +62,10 @@ background: Silver;
     overflow: scroll;
     height:90%;
 }
-#helpRight a{
-    padding:5px;
+#helpRight button{
     font-size:16pt;
+    background: transparent;
+    border:none;
 }
 #help{
     z-index:100000;

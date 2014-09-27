@@ -98,4 +98,5 @@ $('#popup').ready(function(){
 });
 function helpPopup(){
 	Avgrund.show( "#help" );
+	return false;
 }
